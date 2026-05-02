@@ -1,0 +1,10 @@
+{
+  "name": "portafolio-jailiss",
+  "version": "1.0.0",
+  "description": "Portafolio personal de Jailiss Gomez",
+  "scripts": {
+    "dev": "echo 'No hay servidor de desarrollo, usa vercel dev'",
+    "build": "echo 'No hay build necesario para estático'"
+  },
+  "private": true
+}
