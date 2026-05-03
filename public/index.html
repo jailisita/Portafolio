@@ -501,10 +501,9 @@
     <div class="projects-grid">
 
       <div class="glass-card project-card fade-in-up" onclick="openModal('p1')">
-        <div class="project-header ph-coming">
+        <div class="project-header ph-coming" style="background:url(images/TheEnd.jpeg) center/cover no-repeat;">
           <div class="ph-circle ph-c1"></div>
           <div class="ph-circle ph-c2"></div>
-          <span class="project-emoji">🎬</span>
         </div>
         <div class="project-body">
           <div class="project-tech">React · Node.js · MongoDB</div>
@@ -515,10 +514,9 @@
       </div>
 
       <div class="glass-card project-card fade-in-up" style="animation-delay:0.1s;" onclick="openModal('p2')">
-        <div class="project-header ph-teal">
+        <div class="project-header ph-teal" style="background:url(images/ManjaresDelCampo.jpeg) center/cover no-repeat;">
           <div class="ph-circle ph-c1" style="background:var(--lila);"></div>
           <div class="ph-circle ph-c2" style="background:var(--cyan);"></div>
-          <span class="project-emoji">🥕</span>
         </div>
         <div class="project-body">
           <div class="project-tech">Next.js · Tailwind · MongoDB</div>
@@ -529,10 +527,9 @@
       </div>
 
       <div class="glass-card project-card fade-in-up" style="animation-delay:0.2s;" onclick="openModal('p3')">
-        <div class="project-header ph-blue">
+        <div class="project-header ph-blue" style="background:url(images/ParkPlatz.png) center/cover no-repeat;">
           <div class="ph-circle ph-c1" style="background:var(--cyan);"></div>
           <div class="ph-circle ph-c2" style="background:var(--pink);"></div>
-          <span class="project-emoji">🚗</span>
         </div>
         <div class="project-body">
           <div class="project-tech">React · Node.js · PostgreSQL</div>
@@ -543,10 +540,9 @@
       </div>
 
       <div class="glass-card project-card fade-in-up" style="animation-delay:0.3s;" onclick="openModal('p4')">
-        <div class="project-header ph-warm">
+        <div class="project-header ph-warm" style="background:url(images/Siglo.jpeg) center/cover no-repeat;">
           <div class="ph-circle ph-c1" style="background:var(--violet);"></div>
           <div class="ph-circle ph-c2" style="background:var(--rose);"></div>
-          <span class="project-emoji">🏠</span>
         </div>
         <div class="project-body">
           <div class="project-tech">Next.js · Leaflet · MongoDB</div>
@@ -559,7 +555,7 @@
     </div>
     <div class="github-wrap fade-in-up" style="animation-delay:0.4s;">
       <a href="https://github.com/jailisita" target="_blank" class="btn-github">
-        <i class="fab fa-github"></i> Ver mi GitHub
+        <i class="fas fa-globe"></i> Ver página
       </a>
     </div>
   </div>
@@ -702,21 +698,20 @@
     <div id="modalEmoji" style="font-size:3rem; text-align:center; margin-bottom:1.2rem;"></div>
     <h2 id="modalTitle" style="font-family:var(--fh); font-weight:800; letter-spacing:-1px; margin-bottom:1rem; font-size:1.6rem;"></h2>
     <p id="modalDesc" style="color:var(--muted); line-height:1.8; margin-bottom:2rem;"></p>
-    <a id="modalDemo" class="btn btn-primary" href="#" target="_blank" style="width:fit-content;">Ver GitHub →</a>
+    <a id="modalDemo" class="btn btn-primary" href="#" target="_blank" style="width:fit-content;">Ver proyecto →</a>
   </div>
 </div>
 
 <script>
 const projects = {
-    p1: { emoji:'🎬', title:'THE END', desc:'Aplicación web full-stack diseñada para gestionar todas las operaciones de un cine: cartelera de películas, funciones, asignación de asientos y venta de tiquetes. El sistema implementa tres roles diferenciados — administrador, operario y cliente — cada uno con una experiencia y permisos adaptados a sus necesidades.', demo:'https://the-end-1-vfhx.onrender.com/' },
-    p2: { emoji:'🥕', title:'Manjares del Campo', desc:'E-commerce especializado en productos agrícolas 100% naturales, diseñado para conectar productores del campo con clientes finales de forma simple y accesible.', demo:'https://manjares-campo.vercel.app/' },
-    p3: { emoji:'🚗', title:'ParkPlatz', desc:'Aplicación web diseñada para automatizar la operación completa de un estacionamiento. Registra el ingreso y salida de vehículos por placa y tipo, y calcula automáticamente el cobro según las tarifas configuradas por el administrador — variables por hora, fecha y franquicia horaria.', demo:'https://parkplatz-1.onrender.com/' },
-    p4: { emoji:'🏠', title:'SIGLO', desc:'Aplicación web full-stack orientada a la administración completa de lotes y terrenos de una ciudad. Centraliza la gestión de propiedades con información detallada, precios e imágenes, un mapa interactivo para explorar disponibilidad y ubicaciones, módulo de PQRS, registro de pagos y generación de comprobantes.', demo:'https://siglo-2yl5yh00d-gomezjaili20-5689s-projects.vercel.app/' }
+    p1: { title:'THE END', desc:'Aplicación web full-stack diseñada para gestionar todas las operaciones de un cine: cartelera de películas, funciones, asignación de asientos y venta de tiquetes. El sistema implementa tres roles diferenciados — administrador, operario y cliente — cada uno con una experiencia y permisos adaptados a sus necesidades.', demo:'https://the-end-1-vfhx.onrender.com/' },
+    p2: { title:'Manjares del Campo', desc:'E-commerce especializado en productos agrícolas 100% naturales, diseñado para conectar productores del campo con clientes finales de forma simple y accesible.', demo:'https://manjares-campo.vercel.app/' },
+    p3: { title:'ParkPlatz', desc:'Aplicación web diseñada para automatizar la operación completa de un estacionamiento. Registra el ingreso y salida de vehículos por placa y tipo, y calcula automáticamente el cobro según las tarifas configuradas por el administrador — variables por hora, fecha y franquicia horaria.', demo:'https://parkplatz-1.onrender.com/' },
+    p4: { title:'SIGLO', desc:'Aplicación web full-stack orientada a la administración completa de lotes y terrenos de una ciudad. Centraliza la gestión de propiedades con información detallada, precios e imágenes, un mapa interactivo para explorar disponibilidad y ubicaciones, módulo de PQRS, registro de pagos y generación de comprobantes.', demo:'https://siglo-2yl5yh00d-gomezjaili20-5689s-projects.vercel.app/' }
   };
 
   function openModal(id) {
     const p = projects[id];
-    document.getElementById('modalEmoji').textContent = p.emoji;
     document.getElementById('modalTitle').textContent = p.title;
     document.getElementById('modalDesc').textContent = p.desc;
     document.getElementById('modalDemo').href = p.demo;
